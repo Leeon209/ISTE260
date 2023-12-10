@@ -1,0 +1,45 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* White background */
+    color: #333; /* Black text color */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff8c00; /* Orange header background */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+}
+
+nav a {
+    color: #ff8c00; /* Orange link color */
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333; /* Black footer background */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.button {
+    background-color: #ff8c00; /* Orange button background */
+    color: #fff; /* White text color */
+}
+
+
+/* Responsive design - adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
