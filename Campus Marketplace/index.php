@@ -58,7 +58,10 @@
                 }
             ?>
         </main>
-<?php
-    include("assets/inc/footer.php");
-?>
+        <!--Footer-->
+        <footer>
+
+        </footer>
+    </body>
+</html>
         
