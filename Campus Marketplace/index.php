@@ -1,30 +1,15 @@
 <!--THIS IS THE LOGIN PAGE-->
-
-
 <?php
-    include("assest/inc/dbCon.php"):
-    
+    $path = "";
+    include("assest/inc/dbCon.php");
+    include("assets/inc/header.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
-
-    </head>
-
-    <body>
-        <!--Header-->
-        <header>
+        <!--Main Content-->
+        <main>
             <!--RIT Marketplace Logo-->
             <img>
             <!--RIT Marketplace Title-->
-            <h1></h1>
-        </header>
-
-        <!--Main Content-->
-        <main>
+            <h1>Campus Marketplace</h1>
             <?php
                 if(empty($_POST)){
                     include("assest/inc/login.php");
@@ -46,6 +31,7 @@
                             session_name("RIT_Marketplace");
                             session_start();
                             $_SESSION['user'] = $_POST['email'];
+                            ---push session
                         }
                     }
                 } elseif($_POST['account-form'] == "login"){
@@ -63,6 +49,7 @@
                             session_name("RIT_Marketplace");
                             session_start();
                             $_SESSION['user'] = $_POST['email'];
+                            ---push session
                         } else {
                             echo "Incorrect Email or Password";
                             include("assets/inc/login.php");
@@ -71,11 +58,7 @@
                 }
             ?>
         </main>
-
-        <!--Footer-->
-        <footer>
-            
-        </footer>
-
-    </body>
-</html>
+<?php
+    include("assets/inc/footer.php");
+?>
+        
