@@ -1,3 +1,6 @@
+<!--THIS IS THE LOGIN PAGE-->
+
+
 <?php
     include("assest/inc/dbCon.php"):
     
@@ -24,7 +27,7 @@
         <main>
             <?php
                 if(empty($_POST)){
-                    include("assest/inc/dbCon.php");
+                    include("assest/inc/login.php");
                 } elseif($_POST['account-form'] == "create"){
                     if($_POST['switch-form'] == "true"){
                         include("assets/inc/login.php")
@@ -40,17 +43,9 @@
                             echo "that email is already taken";
                             include("assets/inc/create.php");
                         } else {
-                            $sql = "SELECT * FROM `Accounts` WHERE `Password` = '".$_POST['password']."' LIMIT 50;";
-                            $result0 = $conn->query($sql);
-                            if($result0->num_rows > 0) {
-                                $Result0 = "true";
-                            } else {
-                                $Result0 = "falee";
-                            }
-                            if($Result0 == "true"){
-                                echo "that email is already taken";
-                                include("assets/inc/create.php");
-                            }
+                            session_name("RIT_Marketplace");
+                            session_start();
+                            $_SESSION['user'] = $_POST['email'];
                         }
                     }
                 } elseif($_POST['account-form'] == "login"){
@@ -67,7 +62,7 @@
                         if($Result2 == "true"){
                             session_name("RIT_Marketplace");
                             session_start();
-                            $_SESSION['user'] = $_POST['email']
+                            $_SESSION['user'] = $_POST['email'];
                         } else {
                             echo "Incorrect Email or Password";
                             include("assets/inc/login.php");
