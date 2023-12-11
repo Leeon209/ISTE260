@@ -7,10 +7,16 @@
     include("assest/inc/dbCon.php");
     include("assets/inc/header.php");
 ?>
+        <section class="Top">
+        <!--Profile Title-->
+        <h1>Settings</h1>
+        <!--Shopping Cart-->
+
+        </section>
+        
         <!--Main Content-->
         <main>
-            <!--Profile Title-->
-            <h1>Profile</h1>
+            
             
             <!--UserData Part-->
             <?php
@@ -29,7 +35,6 @@
                 echo '<p>'.$Results0['Courses'].'</p>';
             ?>
 
-            
             <!--UserPosts-->
             <h3>Posts</h3>
             <?php
