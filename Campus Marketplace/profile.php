@@ -4,7 +4,7 @@
     session_start();
     
     $path = "";
-    include("assest/inc/dbCon.php");
+    include("assest/inc/dbcon.php");
     include("assets/inc/header.php");
 ?>
         <section class="Top">
