@@ -3,7 +3,10 @@
 ?>
 <main>
     <form class="login-form" action="index.php" method="post" onsubmit="return CheckCreate()">
-        <input type="text" id="email" name="email" placeholder="Email"/>    
+        <input type="text" id="name" name="name" placeholder="Name"/>
+        <input type="text" id="email" name="email" placeholder="Email"/>
+        <input type="text" id="major" name="major" placeholder="Major"/>
+        <input type="number" id="year" name="year" placeholder="Year"/>    
         <input type="text" id="password" name="password" placeholder="Password"/>
         <input type="text" id="confirm-password" name="confirm-password" placeholder="Confirm Password"/>
         

@@ -22,7 +22,7 @@
                         if($result0->num_rows > 0) {
                             $Result0 = "true";
                         } else {
-                            $Result0 = "falee";
+                            $Result0 = "false";
                         }
                         if($Result0 == "true"){
                             echo "that email is already taken";
@@ -31,7 +31,7 @@
                             session_name("RIT_Marketplace");
                             session_start();
                             $_SESSION['user'] = $_POST['email'];
-                            ---push session
+                            header("Location: home.php");
                         }
                     }
                 } elseif($_POST['account-form'] == "login"){
@@ -43,13 +43,13 @@
                         if($result2->num_rows > 0) {
                             $Result2 = "true";
                         } else {
-                            $Result2 = "False"
+                            $Result2 = "false";
                         }
                         if($Result2 == "true"){
                             session_name("RIT_Marketplace");
                             session_start();
                             $_SESSION['user'] = $_POST['email'];
-                            ---push session
+                            header("Location: home.php");
                         } else {
                             echo "Incorrect Email or Password";
                             include("assets/inc/login.php");
