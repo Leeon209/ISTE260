@@ -3,6 +3,14 @@
     $path = "";
     include("assest/inc/dbCon.php");
     include("assets/inc/header.php");
+
+    function sanitize($string, $len = 50){
+        $string = trim($string);
+        $string = htmlentities($string);
+        $string = substr($string,0,$len);
+    
+        return $string;
+    }
 ?>
         <!--Main Content-->
         <main>
@@ -28,6 +36,24 @@
                             echo "that email is already taken";
                             include("assets/inc/create.php");
                         } else {
+                            if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['year']) && !empty($_POST['major'])) {
+                                $name = $_POST['name'];
+                                $email = $_POST['email'];
+                                $major = $_POST['major'];
+                                $year = $_POST['year'];
+                                $password = $_POST['password'];
+                            
+                                $name = sanitize($name);
+                                $email = sanitize($email);
+                                $major = sanitize($major);
+                                $year = sanitize($year);
+                                $password = sanitize($password);
+                            
+                                $sql = "INSERT INTO `Accounts` (`Name`, `Email`, `Major`, `Year`, `Password`) VALUES (?, ?, ?, ?, ?);";
+                                $stmt = $conn->prepare($sql);
+                                $stmt->bind_param("sssis", $name, $email, $major, $year, $password);
+                                $stmt->execute();
+                            }
                             session_name("RIT_Marketplace");
                             session_start();
                             $_SESSION['user'] = $_POST['email'];
