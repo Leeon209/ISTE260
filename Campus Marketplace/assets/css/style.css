@@ -1,3 +1,33 @@
+.head{
+    grid-area: head;
+    background-color: #ff8c00; /* Orange header background */
+    color: #fff;
+    padding: 20px;
+}
+
+.login{
+    grid-area: login;
+    
+}
+
+.body{
+    grid-area: body;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.wrapper{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+    'head login'
+    'body body'
+    'footer footer'
+}
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -10,18 +40,8 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: #ff8c00; /* Orange header background */
-    color: #fff; /* White text color */
-    padding: 20px 0;
-}
-
 nav a {
     color: #ff8c00; /* Orange link color */
-}
-
-section {
-    margin: 20px 0;
 }
 
 footer {

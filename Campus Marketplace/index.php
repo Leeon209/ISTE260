@@ -22,7 +22,7 @@
                         if($result0->num_rows > 0) {
                             $Result0 = "true";
                         } else {
-                            $Result0 = "false";
+                            $Result0 = "falee";
                         }
                         if($Result0 == "true"){
                             echo "that email is already taken";
@@ -43,7 +43,7 @@
                         if($result2->num_rows > 0) {
                             $Result2 = "true";
                         } else {
-                            $Result2 = "false";
+                            $Result2 = "False"
                         }
                         if($Result2 == "true"){
                             session_name("RIT_Marketplace");
@@ -61,7 +61,8 @@
         <!--Footer-->
         <footer>
 
-        </footer>
-    </body>
-</html>
-        
+                </footer>
+            </div>
+        </body>
+    </html>
+</div>
