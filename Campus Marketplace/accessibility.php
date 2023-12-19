@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
     $title = "Accessibility";
     $head = "Welcome!";
     $path = "./";
@@ -10,4 +11,13 @@
     </div>
 <?php
     include($path."asset/inc/footer.php");
+=======
+$title = "Accessibility";
+$head = "Accessibility";
+$path = "./";
+include($path."asset/inc/header.php");
+include($path."asset/inc/nav.php");
+include($path."asset/inc/footer.php");
+
+>>>>>>> refs/remotes/origin/main
 ?>

@@ -4,6 +4,7 @@
     $path = "./";
     include($path."asset/inc/header.php");
     include($path."asset/inc/nav.php");
+    include($path."asset/inc/footer.php");
 ?>
     <div class="body">
         <p>This is a body</p>
