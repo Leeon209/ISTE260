@@ -11,6 +11,6 @@
 <body>
     <div class="page">
         <div class="header">
-        <a href="<?php echo $path; ?>index.php"><img src="<?php echo $path; ?>asset/media/campus_marketplace_logo-01.png" alt="Logo of a market"></a>
+        <!-- <a href="<?php echo $path; ?>index.php"><img src="<?php echo $path; ?>asset/media/campus_marketplace_logo-01.png" alt="Logo of a market"></a> -->
             <h1 class="text"><?php echo $head; ?></h1>
         </div>

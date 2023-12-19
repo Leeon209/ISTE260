@@ -1,99 +1,199 @@
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f36a22;
 }
 
-.page{
-    max-width: 75%;
+.page {
+    max-width: 70%;
     margin: auto;
-    background-color: #fff;
+    background-color: #f36a22;
 }
 
-.header{
+.header {
     grid-area: header;
     background-color: #f36a22;
     color: #fff;
     text-align: center;
 }
 
-.nav{
-    grid-area: nav;
-    background-color: #f36a22;
-}
 
-.body{
+.body {
+    background-color: white;
+    box-sizing: border-box;
     grid-area: body;
 }
-
-.footer{
-    grid-area: footer;
-    background-color: #f36a22;
+* {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-.fig{
+.footer {
+    grid-area: footer;
+    background-color: #f36a22;
+    text-align: center;
+}
+
+.fig {
     grid-area: fig;
 }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr, 10%;
+.wrapper {
+    background-color: gray;
+    /* grid-template-columns: 1fr, 10%;
     grid-gap: 0em;
     grid-template-areas:
-    "header header"
-    "nav nav"
-    "body fig"
-    "footer footer"
+        "header header"
+        "nav nav"
+        "body fig"
+        "footer footer" */
 }
-
-.nav ul{
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4em;
+    background-color: white;
+    border-radius: 30px;
+}
+.container img {
+    padding-bottom: 2em;
+    max-width: 90%;
+    height: auto;
+}
+.nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px ;
+}
+.nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top:3px;
-    padding-bottom:3px;
-    padding-left:10%;
-    padding-right:10%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.nav a{
-    color: #fff;
+.nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
-
-.header img{
+.nav li {
+    font-size: 2em;
+    position: relative;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+.dropdown-toggle {
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.nav .dropdown {
+    background-color: rgba(0, 0, 0, 1);
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    width: auto;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.nav .dropdown li {
+    padding: 5px;
+    white-space: nowrap;
+}
+.header img {
     width: 35px;
     float: right;
 }
 
-p{
+#logo img{
+    width: 35px;
+    float: left;
+}
+h1 {
+    font-size: 2em;
+}
+p {
+    font-size: 20px;
     padding-left: 3em;
     padding-right: 3em;
 }
 
+.team-page .row_team {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.team-page .column {
+    flex: 1;
+    padding: 10px;
+}
+
+.team-page .column.bio {
+    padding-left: 10px;
+}
+.accessibility-page .row_accessibility {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.accessibility-page .column {
+    flex: 1;
+    padding: 10px;
+}
+.accessibility-page .column.image img {
+    max-width: 300px;
+    height: auto;
+}
+.team-page .column.text {
+    padding-right: 20px;
+}
+.team-page .column.image img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.bio h2 {
+    margin-top: 0;
+}
+.bio p {
+    margin-bottom: 0;
+}
+
 @media only screen and (max-aspect-ratio: 3/4) {
-    .wrapper{
+    .wrapper {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 0em;
         grid-template-areas:
-        "header"
-        "nav"
-        "body"
-        "fig"
-        "footer"
+            "header"
+            "nav"
+            "body"
+            "fig"
+            "footer"
     }
-    
-    .nav ul{
+
+    .nav ul {
         list-style-type: none;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left:10%;
-        padding-right:10%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
-    p{
+    p {
         padding-left: 0em;
         padding-left: 0em;
+    }
+
+    .accessibility-page .column.image, .accessibility-page .column.text {
+        width: 100%;
     }
 }
