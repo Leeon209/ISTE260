@@ -1,8 +1,8 @@
 <?php
     $servername = "localhost";
-    $uname = "opa1958";
-    $pwd = "Electrotherapist6\$melolonthidae";
-    $db = "opa1958";
+    $uname = "lsn3369";
+    $pwd = "Deaf+Gamer209";
+    $db = "lsn3369";
 
     $conn = new mysqli($servername, $uname, $pwd, $db);
     if($conn->connect_error){
