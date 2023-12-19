@@ -1,6 +1,6 @@
 <?php
-    $title = "Data Step 3";
-    $head = "Data Step 3";
+    $title = "Field Note";
+    $head = "Field Note";
     $path = "./";
     include($path."asset/inc/header.php");
     include($path."asset/inc/nav.php");

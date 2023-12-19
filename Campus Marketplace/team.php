@@ -19,15 +19,6 @@
 </div>
 <div class="row_team">
     <div class="column image">
-        <img src="asset/media/Team/BeaChin_Image.png" alt="Bea">
-    </div>
-    <div class="column bio">
-        <h2>Bea Chin</h2>
-        <p>From New Jersey, a fourth year RIT student majoring in New Media Design</p>
-    </div>
-</div>
-<div class="row_team">
-    <div class="column image">
         <img src="asset/media/Team/user-icon.png" alt="icon">
     </div>
     <div class="column bio">
@@ -42,6 +33,15 @@
     <div class="column bio">
         <h2>Adam Badre</h2>
         <p>From New York, a Second-year RIT student majoring in CIT</p>
+    </div>
+</div>
+<div class="row_team">
+    <div class="column image">
+        <img src="asset/media/Team/BeaChin_Image.png" alt="Bea">
+    </div>
+    <div class="column bio">
+        <h2>Bea Chin</h2>
+        <p>From New Jersey, a fourth year RIT student majoring in New Media Design</p>
     </div>
 </div>
 <div class="row_team">

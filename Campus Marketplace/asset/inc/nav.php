@@ -9,7 +9,7 @@
     <ul class="dropdown" style="display: none;">
         <li><a href="<?php echo $path; ?>persona.php">Persona</a></li>
         <li><a href="<?php echo $path; ?>storyboard.php">Storyboard</a></li>
-        <li><a href="<?php echo $path; ?>datastep3.php">Data Step 3</a></li>
+        <li><a href="<?php echo $path; ?>datastep3.php">Field Note</a></li>
         <li><a href="<?php echo $path; ?>datastep5.php">Data Step 5</a></li>
     </ul>
 </li>
